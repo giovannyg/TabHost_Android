@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -23,27 +23,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="0">
 
-            <TextView
-                android:id="@+id/tab1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Esta es la tab1"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"/>
-            <TextView
-                android:id="@+id/tab2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Esta es la tab2"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"/>
-            <TextView
-                android:id="@+id/tab3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Esta es la tab3"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"/>
+            <include layout="@layout/boton_rojo"/>
+            <include layout="@layout/fragment_calculadora"/>
+            <include layout="@layout/primer_layout"/>
+
         </FrameLayout>
     </LinearLayout>
 </TabHost>
